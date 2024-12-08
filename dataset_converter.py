@@ -5,6 +5,11 @@ from random import shuffle
 import numpy as np
 from torchdistill.common.file_util import get_file_path_list, make_parent_dirs
 
+'''
+这段代码实现了一个数据集转换工具
+它能够从一个源文件或目录读取数据（支持表格和JSON格式）
+对数据进行采样，并将结果保存到指定的目的地文件或目录
+'''
 
 def get_argparser():
     parser = argparse.ArgumentParser(description='Dataset converter')
